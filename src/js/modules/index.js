@@ -102,7 +102,12 @@ class Homepage {
          }
     
         spanEdit.addEventListener('click', () => {
-            usersOperations.postEdit(user.id)
+            const comentario = document.getElementById('comment').value
+
+            usersOperations.postEdit(post.id, 
+            {
+                content: comentario
+            })
             .then(response => console.log(response))
         })
     

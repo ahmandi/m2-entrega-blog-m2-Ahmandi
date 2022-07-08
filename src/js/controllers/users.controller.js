@@ -53,13 +53,14 @@ export default class usersOperations {
         .catch(err => console.log(err))
     }
 
-    static async postEdit(user_id) {
-        return await fetch(`${this.baseUrl}/posts/${user_id}`,{
+    static async postEdit(post_id, content) {
+        return await fetch(`${this.baseUrl}/posts/${post_id}`,{
             method: 'PATCH',
             headers: { 
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${this.token}` 
-            }
+            },
+            body: JSON.stringify(content)
         })
         .then(response => response.json())
         .then(response => response)
