@@ -22,7 +22,12 @@ class Homepage {
         span.innerText = `${user.username}`
 
         button.innerText = 'Logout'
-        //Adicionar lógica do botão de logout
+        
+        button.addEventListener('click', (e) => (
+            e.preventDefault(),
+            window.localStorage.clear(),            
+            window.location.href = '/src/pages/login.html'
+        ))
 
         figure.append(img)
         div.append(figure, span)
