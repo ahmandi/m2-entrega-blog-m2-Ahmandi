@@ -20,7 +20,7 @@ class Loginout {
         buttonLogin.innerText = 'Login'
 
         inputEmail.type = 'text'
-        inputSenha.type = 'text'
+        inputSenha.type = 'password'
 
         inputEmail.name = 'email'
         inputSenha.name = 'senha'
