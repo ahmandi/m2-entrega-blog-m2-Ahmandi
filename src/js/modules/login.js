@@ -31,7 +31,7 @@ class Loginout {
         inputSenha.placeholder = 'Senha'
         inputEmail.placeholder = 'E-mail'
 
-        buttonLogin.addEventListener('click', (event) => { 
+        buttonLogin.addEventListener('click', (event) => {
             event.preventDefault()
             const email    = document.getElementById('email').value
             const senha    = document.getElementById('senha').value
@@ -43,6 +43,7 @@ class Loginout {
                 "password": senha
             })
             .then(response => console.log(response))
+            window.location.href = '../../../index.html'
         })
 
         form.append(inputEmail, inputSenha, buttonLogin)
