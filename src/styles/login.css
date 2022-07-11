@@ -21,6 +21,7 @@
     width: 1.3rem;
     left: 17rem;
     top: 0.5rem;
+    cursor: pointer;
 }
 
 .modal__container > .modal__form {
@@ -43,6 +44,7 @@
 
 .modal__form > button {
     width: 5rem;
+    cursor: pointer;
 }
 
 button {
