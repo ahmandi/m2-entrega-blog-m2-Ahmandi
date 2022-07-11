@@ -102,7 +102,7 @@ comment__container--box::-webkit-scrollbar-thumb:hover {
 
 .comment__container--box > p {
     width: 90%;
-    height: 5rem;
+    height: 4rem;
 }
 
 .comment__menu {
